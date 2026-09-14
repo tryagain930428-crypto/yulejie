@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>瑜樂傑｜積木生活選物店</title>
+<style>
+*{box-sizing:border-box} body{margin:0;font-family:Arial,"Noto Sans TC",sans-serif;color:#252525;background:#fff}
+a{text-decoration:none;color:inherit}.top{background:#111;color:#fff;text-align:center;padding:9px;font-size:14px}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;border-bottom:1px solid #eee;background:#fff;position:sticky;top:0;z-index:5}
+.logo{font-size:24px;font-weight:900}.logo span{color:#ff6b35}
+.menu{display:flex;gap:28px;font-size:15px}.cart{font-weight:700}
+.hero{min-height:540px;padding:70px 7%;display:flex;align-items:center;background:linear-gradient(135deg,#fff4df,#e8f8ff)}
+.heroText{max-width:560px}.tag{display:inline-block;background:#ff7a45;color:#fff;padding:8px 15px;border-radius:30px;font-weight:700}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.05;margin:20px 0 16px}.hero p{font-size:19px;line-height:1.7;color:#555}
+.btn{display:inline-block;background:#111;color:#fff;padding:14px 26px;border-radius:999px;margin-top:15px;font-weight:700}
+.heroVisual{margin-left:auto;width:42%;max-width:500px}.heroVisual img{width:100%;border-radius:28px;box-shadow:0 25px 60px #0002}
+section{padding:70px 7%}.title{text-align:center;margin-bottom:35px}.title h2{font-size:34px;margin:0 0 8px}.title p{color:#777}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.cat{padding:28px 20px;border-radius:22px;background:#f7f7f7;text-align:center;font-size:20px;font-weight:800}.cat small{display:block;color:#888;font-size:13px;margin-top:8px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.card{border:1px solid #eee;border-radius:22px;overflow:hidden;background:#fff}.pic{aspect-ratio:1/1;background:#f4f4f4;display:flex;align-items:center;justify-content:center}.pic img{width:100%;height:100%;object-fit:cover}.info{padding:17px}.name{font-weight:800;font-size:17px}.price{font-size:21px;font-weight:900;margin-top:9px}.old{text-decoration:line-through;color:#aaa;font-size:13px;margin-left:6px}.badge{display:inline-block;background:#ffe9df;color:#ed5b27;padding:5px 9px;border-radius:8px;font-size:12px;margin-bottom:9px}
+.banner{border-radius:30px;background:#111;color:#fff;padding:48px;display:flex;justify-content:space-between;align-items:center}.banner h2{font-size:36px;margin:0 0 8px}.banner p{color:#ccc}.banner .btn{background:#fff;color:#111}
+footer{background:#f7f7f7;padding:45px 7%;display:flex;justify-content:space-between;gap:30px}.muted{color:#777;line-height:1.8}
+@media(max-width:900px){.menu{display:none}.hero{padding:45px 6%;flex-direction:column}.heroVisual{width:100%;margin:35px 0 0}.cats,.products{grid-template-columns:repeat(2,1fr)}.banner{flex-direction:column;align-items:flex-start}footer{flex-direction:column}}
+@media(max-width:520px){section{padding:50px 5%}.cats{grid-template-columns:1fr 1fr}.products{grid-template-columns:1fr 1fr;gap:12px}.info{padding:12px}.name{font-size:14px}.price{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="top">🎉 新會員優惠｜精選積木限時優惠中</div>
+<nav>
+  <div class="logo">瑜樂傑<span>．</span>積木選物</div>
+  <div class="menu"><a href="#products">熱賣商品</a><a href="#categories">商品分類</a><a href="#about">關於我們</a></div>
+  <div class="cart">🛒 購物車</div>
+</nav>
+
+<header class="hero">
+  <div class="heroText">
+    <span class="tag">人氣新品</span>
+    <h1>把喜歡的東西<br>拼成生活的一部分。</h1>
+    <p>精選可愛積木、花朵積木與趣味小物，讓每一次組裝都變成一份小小的成就感。</p>
+    <a class="btn" href="#products">立即逛逛 →</a>
+  </div>
+  <div class="heroVisual">
+    <img src="ghast-keychain.jpg" alt="可愛方塊吊飾">
+  </div>
+</header>
+
+<section id="categories">
+  <div class="title"><h2>熱門分類</h2><p>找到你喜歡的那一款</p></div>
+  <div class="cats">
+    <div class="cat">🌸 永生花積木<small>浪漫收藏</small></div>
+    <div class="cat">🐼 可愛動物<small>療癒系小物</small></div>
+    <div class="cat">🏠 場景積木<small>打造你的世界</small></div>
+    <div class="cat">🎒 趣味吊飾<small>隨身帶著走</small></div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="title"><h2>本月熱賣</h2><p>小巧、可愛、送禮也很適合</p></div>
+  <div class="products">
+    <article class="card"><div class="pic"><img src="ghast-keychain.jpg" alt="方塊幽靈吊飾"></div><div class="info"><span class="badge">熱賣</span><div class="name">方塊幽靈鑰匙扣</div><div class="price">NT$45 <span class="old">NT$99</span></div></div></article>
+    <article class="card"><div class="pic" style="font-size:70px">🌻</div><div class="info"><span class="badge">人氣</span><div class="name">永生捧花積木</div><div class="price">NT$99</div></div></article>
+    <article class="card"><div class="pic" style="font-size:70px">🐼</div><div class="info"><span class="badge">可愛</span><div class="name">可愛動物積木</div><div class="price">NT$10 起</div></div></article>
+    <article class="card"><div class="pic" style="font-size:70px">🌷</div><div class="info"><span class="badge">新品</span><div class="name">花朵系列積木</div><div class="price">NT$55 起</div></div></article>
+  </div>
+</section>
+
+<section id="about">
+  <div class="banner">
+    <div><h2>今天，拼一個喜歡的吧。</h2><p>瑜樂傑｜用積木把日常變得更可愛。</p></div>
+    <a class="btn" href="#products">看看熱賣商品</a>
+  </div>
+</section>
+
+<footer>
+  <div><strong>瑜樂傑企業社</strong><div class="muted">積木・生活選物・趣味小物</div></div>
+  <div class="muted">客服｜購物須知｜退換貨政策<br>© 2026 Yulejie Enterprise</div>
+</footer>
+</body>
+</html>
