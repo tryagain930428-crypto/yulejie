@@ -1,4 +1,46 @@
-<div class="products">
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>瑜樂傑｜積木生活選物店</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,"Noto Sans TC",sans-serif;color:#252525;background:#fff}
+a{text-decoration:none;color:inherit}
+.top{background:#111;color:#fff;text-align:center;padding:9px;font-size:14px}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;border-bottom:1px solid #eee;background:#fff;position:sticky;top:0;z-index:5}
+.logo{font-size:24px;font-weight:900}.logo span{color:#ff6b35}
+.menu{display:flex;gap:28px;font-size:15px}.cart{font-weight:700}
+section{padding:55px 7%}
+.title{text-align:center;margin-bottom:35px}.site-banner{width:100%;margin:0 0 35px;border-radius:14px;overflow:hidden}.site-banner img{display:block;width:100%;height:auto}
+.title h2{font-size:34px;margin:0 0 8px}.title p{color:#777}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.product{border:1px solid #eee;border-radius:18px;overflow:hidden;background:#fff;transition:.2s}
+.product:hover{transform:translateY(-3px);box-shadow:0 8px 25px #00000012}
+.product img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.info{padding:16px}.name{font-size:18px;font-weight:800;margin-bottom:8px}
+.price{font-size:22px;font-weight:900;color:#ef5b4f}
+.meta{color:#777;font-size:13px;margin-top:8px;line-height:1.6}
+footer{background:#f7f7f7;padding:45px 7%;display:flex;justify-content:space-between;gap:30px}
+.muted{color:#777;line-height:1.8}
+@media(max-width:900px){.menu{display:none}.products{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){section{padding:45px 5%}.products{gap:12px}.info{padding:12px}.name{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="top">🎉 瑜樂傑積木選物店</div>
+<nav>
+  <div class="logo">瑜樂傑<span>．</span>積木選物</div>
+  <div class="menu"><a href="#products">商品列表</a><a href="#about">關於我們</a></div>
+  <div class="cart">🛒 購物車</div>
+</nav>
+
+<section id="products">
+  <div class="site-banner">
+    <img src="contact-banner.jpg" alt="請加賴購買｜LINE ID: try9304">
+  </div>
+  <div class="products">
     <article class="product">
       <a href="https://shopee.tw/opaanlp/69443534/24120681007" target="_blank" rel="noopener">
       <img src="cartoon-bricks.avif" alt="卡通積木">
@@ -136,183 +178,16 @@
       </a>
     </article>
 
-    <article class="product">
-      <a href="https://s.shopee.tw/5VVKVYUwlW" target="_blank" rel="noopener noreferrer">
-        <img src="christmas-train-bricks.png" alt="聖誕火車積木">
-        <div class="info">
-          <div class="name">聖誕火車積木</div>
-          <div class="price">NT$20／盒</div>
-          <div class="meta">共6款｜隨機出貨<br>76盒／箱</div>
-        </div>
-      </a>
-    </article>
-
-    <article class="product">
-      <a href="https://s.shopee.tw/3VkkUOhPNY" target="_blank" rel="noopener noreferrer">
-        <img src="car19-bricks.jpg" alt="小汽車積木">
-        <div class="info">
-          <div class="name">小汽車積木</div>
-          <div class="price">NT$19／盒</div>
-          <div class="meta">共12款｜隨機出貨<br>64盒／箱</div>
-        </div>
-      </a>
-    </article>
-
-    <article class="product">
-      <a href="https://s.shopee.tw/9AP7F4EcHQ" target="_blank" rel="noopener noreferrer">
-        <img src="finance-ball-bricks.jpg" alt="財神水晶球積木">
-        <div class="info">
-          <div class="name">財神水晶球積木</div>
-          <div class="price">NT$20／盒</div>
-          <div class="meta">共4款｜隨機出貨<br>76盒／箱</div>
-        </div>
-      </a>
-    </article>
-
-    <article class="product">
-      <a href="https://s.shopee.tw/1BMpiEiw1R" target="_blank" rel="noopener noreferrer">
-        <img src="street-shop-bricks.jpg" alt="街景商鋪積木">
-        <div class="info">
-          <div class="name">街景商鋪積木</div>
-          <div class="price">NT$20／盒</div>
-          <div class="meta">共12款｜隨機出貨<br>76盒／箱</div>
-        </div>
-      </a>
-    </article>
-
-    <article class="product">
-      <a href="https://s.shopee.tw/9KiXRTJfcK" target="_blank" rel="noopener noreferrer">
-        <img src="pirate-ship-bricks.jpg" alt="海盜船積木">
-        <div class="info">
-          <div class="name">海盜船積木</div>
-          <div class="price">NT$20／盒</div>
-          <div class="meta">共6款｜隨機出貨<br>76盒／箱</div>
-        </div>
-      </a>
-    </article>
-
-    <article class="product">
-      <a href="https://s.shopee.tw/9KiXRTJfcK" target="_blank" rel="noopener noreferrer">
-        <img src="double-street-bricks.jpg" alt="雙層街景積木">
-        <div class="info">
-          <div class="name">雙層街景積木</div>
-          <div class="price">NT$20／盒</div>
-          <div class="meta">共6款｜隨機出貨<br>76盒／箱</div>
-        </div>
-      </a>
-    </article>
-
-    <article class="product">
-      <a href="https://s.shopee.tw/9KiXRTJfcK" target="_blank" rel="noopener noreferrer">
-        <img src="mini-sakura-house-bricks.jpg" alt="迷你櫻花小屋積木">
-        <div class="info">
-          <div class="name">迷你櫻花小屋積木</div>
-          <div class="price">NT$15／盒</div>
-          <div class="meta">共6款｜隨機出貨<br>90盒／箱</div>
-        </div>
-      </a>
-    </article>
-
-    <article class="product">
-      <a href="https://s.shopee.tw/1AsKXxijp" target="_blank" rel="noopener noreferrer">
-        <img src="dress-crystal-ball-bricks.jpg" alt="禮服水晶球積木">
-        <div class="info">
-          <div class="name">禮服水晶球積木</div>
-          <div class="price">NT$20／盒</div>
-          <div class="meta">共6款｜隨機出貨<br>76盒／箱</div>
-        </div>
-      </a>
-    </article>
-
-    <article class="product">
-      <a href="https://s.shopee.tw/30oTu7G1X2" target="_blank" rel="noopener noreferrer">
-        <img src="double-street-train-bricks.jpg" alt="雙層街景積木">
-        <div class="info">
-          <div class="name">街景小火車積木</div>
-          <div class="price">NT$17／盒、NT$20／盒</div>
-          <div class="meta">共12款｜隨機出貨<br>76盒／箱、90盒／箱</div>
-        </div>
-      </a>
-    </article>
-
-
-
-
-
-  
-    <article class="product">
-      <a href="https://s.shopee.tw/7VGtGTmm97" target="_blank" rel="noopener noreferrer">
-        <img src="everlasting-flower-pot-bricks.jpg" alt="永生花小盆栽積木">
-        <div class="info">
-          <div class="name">永生花小盆栽積木</div>
-          <div class="price">NT$13／盒</div>
-          <div class="meta">共12款｜隨機出貨<br>90盒／箱</div>
-        </div>
-      </a>
-    </article>
-
-    <article class="product">
-      <a href="https://s.shopee.tw/gQZ8127IP" target="_blank" rel="noopener noreferrer">
-        <img src="everlasting-flower-fridge-magnet.jpg" alt="永生花冰箱貼積木">
-        <div class="info">
-          <div class="name">永生花冰箱貼積木</div>
-          <div class="price">NT$16／盒</div>
-          <div class="meta">共12款｜隨機出貨<br>64盒／箱</div>
-        </div>
-      </a>
-    </article>
-
-    <article class="product">
-      <a href="https://s.shopee.tw/gQZ8127IP" target="_blank" rel="noopener noreferrer">
-        <img src="everlasting-flower-crystal-ball-sticker.jpg" alt="永生花水晶球貼積木">
-        <div class="info">
-          <div class="name">永生花水晶球貼積木</div>
-          <div class="price">NT$20／盒</div>
-          <div class="meta">共21款｜隨機出貨<br>76盒／箱</div>
-        </div>
-      </a>
-    </article>
-
-    <article class="product">
-      <a href="https://s.shopee.tw/905h3kDdje" target="_blank" rel="noopener noreferrer">
-        <img src="mini-cake-bricks.jpg" alt="迷你蛋糕積木">
-        <div class="info">
-          <div class="name">迷你蛋糕積木</div>
-          <div class="price">NT$13／盒</div>
-          <div class="meta">共6款｜隨機出貨<br>90盒／箱</div>
-        </div>
-      </a>
-    </article>
-
-    <article class="product">
-      <a href="https://s.shopee.tw/1BMpjOstkK" target="_blank" rel="noopener noreferrer">
-        <img src="fruit-gacha-bricks.jpg" alt="水果扭蛋機積木">
-        <div class="info">
-          <div class="name">水果扭蛋機積木</div>
-          <div class="price">NT$20／盒</div>
-          <div class="meta">共18款｜隨機出貨<br>76盒／箱</div>
-        </div>
-      </a>
-    </article>
-    <article class="product">
-      <a href="https://s.shopee.tw/7VGtHFKnEB" target="_blank" rel="noopener noreferrer">
-        <img src="cat-bricks-new.jpg" alt="貓咪積木">
-        <div class="info">
-          <div class="name">貓咪積木</div>
-          <div class="price">NT$16／盒</div>
-          <div class="meta">共9款｜隨機出貨<br>74盒／箱</div>
-        </div>
-      </a>
-    </article>
-    <article class="product">
-      <a href="https://s.shopee.tw/30oTv2IZW7" target="_blank" rel="noopener noreferrer">
-        <img src="dog-bricks.jpg" alt="狗狗積木">
-        <div class="info">
-          <div class="name">狗狗積木</div>
-          <div class="price">NT$16／盒</div>
-          <div class="meta">共9款｜隨機出貨<br>74盒／箱</div>
-        </div>
-      </a>
-    </article>
-</div>
+  </div>
 </section>
+
+<section id="about">
+  <div class="title"><h2>關於瑜樂傑</h2><p>積木・生活選物・趣味小物</p></div>
+</section>
+
+<footer>
+  <div><strong>瑜樂傑企業社</strong><div class="muted">積木・生活選物・趣味小物</div></div>
+  <div class="muted">客服｜購物須知｜退換貨政策<br>© 2026 Yulejie Enterprise</div>
+</footer>
+</body>
+</html>
